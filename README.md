@@ -23,23 +23,23 @@ To run the project locally:
 
 ### Clone the repository:
 
-    `git clone https://github.com/xing24xing/Y-ng-Ch-ng.git`
+    git clone https://github.com/xing24xing/Y-ng-Ch-ng.git
 
 ### Navigate to the project directory:
 
-     `cd Y-ng-Ch-ng`
+     cd Y-ng-Ch-ng
 
 ### Install dependencies:
 
-     `npm install`
+     npm install
 
 ### Create a .env file and add your RapidAPI key:
 
-    `REACT_APP_RAPIDAPI_KEY=your-rapidapi-key-here`
+    REACT_APP_RAPIDAPI_KEY=your-rapidapi-key-here
 
 ### Start the development server:
 
-     `npm start`
+     npm start
 
 # API Integration
 
