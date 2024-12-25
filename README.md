@@ -56,7 +56,7 @@ To run the project locally:
 #### React.js: A JavaScript library for building user interfaces.
 #### RapidAPI: A platform for connecting to thousands of APIs.
 #### CSS: For styling the application with a clean and modern look.
-  - Gist file : <script src="https://gist.github.com/xing24xing/eba35bdb72c923f9d794e6238068ad5c.js">index.css</script>
+  - Gist file : <script src="https://gist.github.com/xing24xing/2ef84ef03dee08c7dc47c3b6694b3bd7.js"></script>
 
 # Contributing
 #### Fork the repository.
