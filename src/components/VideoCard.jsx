@@ -7,18 +7,29 @@ import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoCha
 
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
   <Card sx={{ 
-    width: { xs: '100%', sm: '358px', md: "320px" }, 
+    width: '320px',  // Set a consistent width
     boxShadow: "none", 
-    borderRadius: '8px',  // Add border radius here
+    borderRadius: '8px', 
+    margin: '10px', // Optional spacing between cards
   }}>
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
       <CardMedia 
         image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} 
         alt={snippet?.title} 
-        sx={{ width: { xs: '100%', sm: '358px' }, height: 180, borderTopLeftRadius: '8px', borderTopRightRadius: '8px' }} 
+        sx={{ 
+          width: '100%',  // Full width relative to the card
+          height: '180px',  // Consistent height
+          borderTopLeftRadius: '8px', 
+          borderTopRightRadius: '8px' 
+        }} 
       />
     </Link>
-    <CardContent sx={{ backgroundColor: "#000814", height: '106px', borderBottomLeftRadius: '8px', borderBottomRightRadius: '8px' }}>
+    <CardContent sx={{ 
+      backgroundColor: "#000814", 
+      height: '106px', 
+      borderBottomLeftRadius: '8px', 
+      borderBottomRightRadius: '8px' 
+    }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}

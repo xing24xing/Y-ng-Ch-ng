@@ -86,3 +86,32 @@ a {
     width:200px;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #16161a;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures cards adjust on smaller screens */
+  justify-content: center;
+  gap: 15px; /* Adds spacing between cards */
+}
+
+.card-container .card {
+  flex: 0 1 calc(33.333% - 15px); /* 3 cards per row */
+  max-width: 320px; /* Set the max width */
+}
+
+@media screen and (max-width: 768px) {
+  .card-container .card {
+    flex: 0 1 calc(50% - 15px); /* 2 cards per row on tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-container .card {
+    flex: 0 1 calc(100% - 15px); /* 1 card per row on mobile */
+  }
+}
